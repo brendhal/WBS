@@ -1,0 +1,31 @@
+import 'dart:math';
+
+void main(){
+  loveCalculator();
+}
+
+void loveCalculator(){
+  int loveScore = Random().nextInt(100)+1;
+  print(loveScore);
+
+  // if (loveScore > 50){
+  //   print('you really love me');
+
+  // }else
+  // print('you hate me');
+
+  if(loveScore > 50){
+    print('high chance of love');
+  }
+
+  else if(loveScore > 50 && loveScore > 70){
+    print('high chance of love');
+  }
+
+  else if(loveScore < 50){
+    print('low chance of love');
+  }
+  else{
+    print('no love at all');
+  }
+}
